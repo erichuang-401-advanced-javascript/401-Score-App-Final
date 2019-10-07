@@ -1,8 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Landing from '../Landing/Landing';
 
 function App() {
   return (
-    <h1>morning</h1>
+    <React.Fragment>
+      <BrowserRouter>
+        <Route path='/scores' component={Landing}/>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
