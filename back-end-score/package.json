@@ -1,0 +1,23 @@
+{
+  "name": "back-end-score",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "startdb": "mkdir -p data/db && mongod --dbpath data/db",
+    "lint": "eslint \"**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.5.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "uuid": "^3.3.3"
+  }
+}
